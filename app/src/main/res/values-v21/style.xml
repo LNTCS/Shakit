@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="android:Theme.Material.Light.NoActionBar">
+        <!-- Main theme colors -->
+        <!--   your app branding color for the app bar -->
+        <item name="android:colorPrimary">@color/primary</item>
+        <!--   darker variant for the status bar and contextual app bars -->
+        <item name="android:colorPrimaryDark">@color/primary_dark</item>
+        <!--   theme UI controls like checkboxes and text fields -->
+        <item name="android:seekBarStyle">@style/SeekBarShakit</item>
+        <item name="android:colorAccent">@color/accent</item>
+    </style>
+    <style name="AppTheme.Act" parent="android:Theme.Material.Light.DarkActionBar">
+        <!-- Main theme colors -->
+        <!--   your app branding color for the app bar -->
+        <item name="android:colorPrimary">@color/primary</item>
+        <!--   darker variant for the status bar and contextual app bars -->
+        <item name="android:colorPrimaryDark">@color/primary_dark</item>
+        <!--   theme UI controls like checkboxes and text fields -->
+        <item name="android:colorAccent">@color/accent</item>
+    </style>
+
+    <style name="AppTheme.Dia" parent="android:Theme.Material.Light.Dialog">
+    </style>
+
+    <style name="SeekBarShakit" parent="android:Widget.Material.Light.SeekBar">
+        <item name="android:progressDrawable">@drawable/shakit_scrubber_progress_horizontal_holo_light</item>
+        <item name="android:indeterminateDrawable">@drawable/shakit_scrubber_progress_horizontal_holo_light</item>
+        <item name="android:thumb">@drawable/shakit_scrubber_control_selector_holo_light</item>
+    </style>
+
+</resources>

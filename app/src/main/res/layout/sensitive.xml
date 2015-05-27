@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#fff"
+    android:minWidth="400dp"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
+        android:text="민감도 설정"
+        android:textColor="@color/primary"
+        android:textSize="24sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
+        android:text="원하는 감도 만큼 기기를 흔들어 주세요."
+        android:layout_width="match_parent"
+        android:textSize="16sp"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_marginTop="24dp"
+        android:text="민감도 설정"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+    <TextView
+        android:text=""
+        android:gravity="center"
+        android:textColor="@color/primary"
+        android:textSize="32sp"
+        android:id="@+id/seneitive_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <com.gc.materialdesign.views.ButtonFlat
+        android:id="@+id/sensitive_dismiss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_gravity="right"
+        android:background="@color/primary"
+        android:text="완료" />
+</LinearLayout>

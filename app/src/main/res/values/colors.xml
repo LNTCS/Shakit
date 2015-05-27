@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#00838f</color>
+    <color name="primary_dark">#026165</color>
+    <color name="accent">#00acc1</color>
+    <color name="dragndrop_background">#aa00acc1</color>
+    <color name="shakit_color">#00838f</color>
+    <array name="progress_colors">
+        <item>#FF3F8AF8</item>
+        <item>#FFD8433C</item>
+        <item>#FFF2AF3A</item>
+        <item>#FF279B5E</item>
+    </array>
+</resources>

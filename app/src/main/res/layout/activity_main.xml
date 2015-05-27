@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content">
+
+        <kr.edcan.shakit.DndListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#00000000"
+            android:scrollbars="none"
+            android:layout_below="@+id/header_container"
+            android:background="@android:color/white" />
+        <LinearLayout
+            android:id="@+id/action_title"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:background="@color/primary"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="#fff"
+                android:id="@+id/header_title"
+                android:layout_marginLeft="50dp"
+                android:textSize="40sp"
+                android:text="Shakit!"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="#7FDDE9"
+                android:textSize="16sp"
+                android:layout_marginLeft="50dp"
+                android:id="@+id/header_subtitle_ori"
+                android:text="바로가기가 설정된 앱 #개"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="12dp"/>
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/btn_option"
+            android:layout_width="72dp"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:background="@drawable/on_selector"
+            android:src="@drawable/btn_main_ac_option"
+            android:padding="24dp"
+            android:layout_height="72dp" />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/action_plus"
+            fab:fab_icon="@drawable/plus_circle"
+            fab:fab_title="추가하기"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="#F9F9F9"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="32dp"
+            android:layout_marginRight="16dp"
+            fab:fab_colorPressed="#C1C1C1"/>
+    </RelativeLayout>
+</FrameLayout>

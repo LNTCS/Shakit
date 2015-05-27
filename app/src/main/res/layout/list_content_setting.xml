@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:minHeight="56dp"
+    android:layout_height="56dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_height="56dp">
+        <TextView
+            android:layout_weight="0.75"
+            android:id="@+id/setting_name"
+            android:layout_width="1dp"
+            android:textSize="20sp"
+            android:textColor="@color/primary"
+            android:text="설정 속성의 이름"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent" />
+        <RelativeLayout
+            android:layout_weight="0.25"
+            android:layout_width="1dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:textSize="20sp"
+                android:gravity="center"
+                android:id="@+id/setting_option"
+                android:layout_width="match_parent"
+                android:textColor="#BCBCBC"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:id="@+id/setting_img"
+                android:scaleType="centerInside"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:background="#DFDFDF"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="1px"/>
+</RelativeLayout>

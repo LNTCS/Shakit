@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#00ffffff"
+    android:paddingLeft="10dp"
+    android:id="@+id/dialog_bg"
+    android:paddingRight="10dp"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_active_search_theme_black"
+        android:orientation="horizontal"
+        android:id="@+id/dialog_searchbar"
+        android:weightSum="1"
+        android:layout_height="48dp">
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="24dp"
+            android:textSize="18sp"
+            android:textColor="#cfd8dc"
+            android:text="눌러서 검색.."
+            android:layout_height="match_parent" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:scaleType="centerInside"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/btn_active_search_icon_theme_black"
+            android:adjustViewBounds="true"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_active_theme_black"
+        android:layout_marginBottom="24dp"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_height="80dp">
+        <HorizontalScrollView
+            android:id="@+id/horizontal_scroll"
+            android:requiresFadingEdge="horizontal"
+            android:scrollbars="none"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:id="@+id/horizontalList"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="match_parent">
+                </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+</LinearLayout>

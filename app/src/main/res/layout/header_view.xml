@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/header_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_height"
+        android:background="@android:color/holo_blue_dark">
+        <RelativeLayout
+            android:id="@+id/header_infos_container"
+            android:layout_width="match_parent"
+            android:background="@color/primary"
+            android:layout_height="250dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/primary"
+                    android:paddingRight="40dp"
+                    android:paddingLeft="40dp"
+                    android:scaleType="fitStart"
+                    android:src="@drawable/bg_main_ac_background_accessory" />
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:weightSum="10"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="9"
+                    android:layout_height="1dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textColor="#fff"
+                        android:id="@+id/header_title"
+                        android:layout_marginLeft="50dp"
+                        android:textSize="40sp"
+                        android:text="Shakit!"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textColor="#7FDDE9"
+                        android:textSize="16sp"
+                        android:layout_marginLeft="50dp"
+                        android:id="@+id/header_subtitle"
+                        android:text="바로가기가 설정된 앱 #개"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/empty"
+        android:layout_width="fill_parent"
+        android:minHeight="304dp"
+        android:layout_height="wrap_content" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical" >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="바로가기를 추가하세요"
+                android:textColor="#bdbdbd"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="아무것도 설정되지 않았습니다.\n아래의 +버튼을 눌러 추가하세요."
+                android:textColor="#bdbdbd"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
