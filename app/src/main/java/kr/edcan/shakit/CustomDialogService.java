@@ -114,7 +114,7 @@ public class CustomDialogService extends Dialog {
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         if ((keyCode == KeyEvent.KEYCODE_HOME)) {
-            dismiss();
+            dismiss();//닫기
             return true;
         }
         return super.onKeyDown(keyCode, event);
